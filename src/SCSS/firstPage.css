@@ -1,0 +1,42 @@
+body{
+  background-color: #F7F3F3;
+}
+/*主页轮播图*/
+
+
+/*主页8个朝代分类栏*/
+.container_classification_css{
+  margin-bottom: 60px;
+}
+.row_classification_css li{
+  list-style: none;
+  position: initial;
+  border:1px solid #E4DBDB;
+}
+.classification_text_css{
+  float:left;
+}
+.classification_img_css{
+  float:right;
+  width:50%;
+}
+
+/*导航栏*/
+.container_navigation_css{
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  background: #F7F3F3;
+  padding-top: 10px;
+  padding-left: 10px;
+  box-shadow: 0px 1px 10px #BDB8B8;
+}
+.row_navigation_css li{
+  width: 20%;
+  height: 40px;
+  float: left;
+  list-style: none;
+  text-align: center;
+  line-height: 40px;
+}
+
