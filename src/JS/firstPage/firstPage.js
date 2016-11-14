@@ -6,6 +6,8 @@ require(["jquery","underscore","Backbone"],
                 "click li":"checkIn",
             },
             initialize: function () {
+                var width = this.$("#img_width").width();
+                this.$(".row_classification_css").find("li").css("height",width+"px");
                 
             },
             render:function(){

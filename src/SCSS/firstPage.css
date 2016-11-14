@@ -1,10 +1,15 @@
 body{
   background-color: #F7F3F3;
+  margin:0px;
 }
-/*主页轮播图*/
+/*24小时与一口价切换*/
+.switch_class{
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+}
 
-
-/*主页8个朝代分类栏*/
+/*主页9个朝代分类栏*/
 .container_classification_css{
   margin-bottom: 60px;
 }
@@ -13,11 +18,18 @@ body{
   position: initial;
   border:1px solid #E4DBDB;
 }
+.row_classification_css li img{
+  margin-top: 20%;
+  margin-left: 25%;
+  border-radius: 100px;
+}
 .classification_text_css{
-  float:left;
+  //float:left;
+  text-align: center;
+  margin-top: 15%;
 }
 .classification_img_css{
-  float:right;
+  //float:right;
   width:50%;
 }
 
@@ -28,7 +40,6 @@ body{
   bottom: 0px;
   background: #F7F3F3;
   padding-top: 10px;
-  padding-left: 10px;
   box-shadow: 0px 1px 10px #BDB8B8;
 }
 .row_navigation_css li{
@@ -39,4 +50,3 @@ body{
   text-align: center;
   line-height: 40px;
 }
-
