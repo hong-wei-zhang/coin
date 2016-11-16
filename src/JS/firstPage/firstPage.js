@@ -1,14 +1,13 @@
 require(["jquery","underscore","Backbone"],
     function($,_,Backbone){
-        var AppView = Backbone.View.extend({
+        var firstPageView = Backbone.View.extend({
             el:$("body"),
             events: {
                 "click li":"checkIn",
             },
             initialize: function () {
-                var width = this.$("#img_width").width();
-                this.$(".row_classification_css").find("li").css("height",width+"px");
-                
+                // var width = this.$("#img_width").width();
+                // this.$(".row_classification_css").find("li").css("height",width+"px"); 
             },
             render:function(){
                 
@@ -30,7 +29,11 @@ require(["jquery","underscore","Backbone"],
                 }
             },
             firstPage:function(){
-                console.info(1)
+                this.xx.save(null,{
+                    success:function(response) {
+                        console.info(response)
+                    }
+                })
             },
             classification:function(){
                 console.info(2)
@@ -42,14 +45,14 @@ require(["jquery","underscore","Backbone"],
                 console.info(4)
             },
             myHome:function(){
-                console.info(5)
+                
             }
 
         });
         //实例化AppView
-        var appview = new AppView;
+        var firstPageView = new firstPageView;
 
-        var AppRouter = Backbone.Router.extend({
+        var firstPageRouter = Backbone.Router.extend({
             el:$("body"),
             routes : {
                 'firstPage' : 'firstPage',
@@ -75,8 +78,14 @@ require(["jquery","underscore","Backbone"],
             
             }
         });
-          
-        var router = new AppRouter();
+        // 实例化AppRouter
+        var firstPageRouter = new firstPageRouter();
         Backbone.history.start();
+
+        var firstPageModel = Backbone.Model.extend({
+            url:"../PHP/hello.php",
+        })
+        // var xx = new firstPageModel();
+        // xx.save({id:"1"});
 })
 
