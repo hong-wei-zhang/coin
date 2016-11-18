@@ -28,7 +28,7 @@ body{
 
 /*切换栏显示区*/
 .container_content_css{
-  margin-bottom:80px;
+  margin-bottom:60px;
   margin-top: 5px;
 }
 .goods_message_css{
@@ -81,32 +81,5 @@ body{
   text-align: center;
   line-height: 40px;
   color: rgba(245, 35, 12, 0.65);
-}
-
-/*3D网格翻转*/
-.Qcontainer {
-  -webkit-perspective: 1500px;
-  perspective: 1500px;
-  position: absolute;
-}
-.film {
-  transform-style:preserve-3d;
-  transition:1s;
-}
-.filmhover  {
-  cursor: pointer;
-  position: absolute;
-  transform:rotateX(180deg);
-  /*transform:scale(0.5);*/
-}
-
-.face {
-  position: absolute;
-  backface-visibility: hidden;
-}
-.back {
-  position: absolute;
-  background: #F7F3F3;
-  transform:rotateX(180deg);
 }
 
