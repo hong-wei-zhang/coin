@@ -45,9 +45,14 @@ require(["jquery","underscore","Backbone"],
                 console.info(4)
             },
             myHome:function(){
-                
+                console.info (45)
+                if(this.$(".film").hasClass("filmhover")){
+                    this.$(".film").removeClass("filmhover")
+                } else {
+                    this.$(".film").addClass("filmhover")
+                }
+                console.info(33)
             }
-
         });
         //实例化AppView
         var firstPageView = new firstPageView;

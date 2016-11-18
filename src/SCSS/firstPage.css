@@ -10,7 +10,7 @@ body{
   width: 100%;
   top:0px;
 }
-.header_search_row_class{
+.row_header_search_class{
   padding: 30px 0px 10px 10px;
 }
 .header_search_input_css{
@@ -26,10 +26,42 @@ body{
   line-height: 50px;
 }
 
-/*显示内容*/
+/*切换栏显示区*/
 .container_content_css{
-  margin-bottom:60px;
-  margin-top: 20px;
+  margin-bottom:80px;
+  margin-top: 5px;
+}
+.goods_message_css{
+  border: 1px solid gray; 
+  margin:2px;
+  overflow:hidden;
+}
+.goods_message_header_css{
+  overflow:hidden;
+  border-bottom:1px solid gray
+}
+.goods_message_avatar_css{
+  padding:2%
+}
+.goods_message_sellersName_css{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.goods_message_title_css{
+  padding:2%;
+  font-size: 14px;
+}
+.goods_message_remainTime_css{
+  padding:0 2% 2% 2%;
+  color: #e82525;
+}
+.goods_message_button_css{
+  text-align: center;
+  border: 1px solid #efd9d9;
+  margin: 5%;
+  border-radius: 10px;
+  padding: 4%;
+  background: #e6d9d9;
 }
 
 /*导航栏*/
@@ -49,5 +81,32 @@ body{
   text-align: center;
   line-height: 40px;
   color: rgba(245, 35, 12, 0.65);
+}
+
+/*3D网格翻转*/
+.Qcontainer {
+  -webkit-perspective: 1500px;
+  perspective: 1500px;
+  position: absolute;
+}
+.film {
+  transform-style:preserve-3d;
+  transition:1s;
+}
+.filmhover  {
+  cursor: pointer;
+  position: absolute;
+  transform:rotateX(180deg);
+  /*transform:scale(0.5);*/
+}
+
+.face {
+  position: absolute;
+  backface-visibility: hidden;
+}
+.back {
+  position: absolute;
+  background: #F7F3F3;
+  transform:rotateX(180deg);
 }
 
